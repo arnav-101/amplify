@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amplify - Music Player</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <main class="bg-black h-screen overflow-hidden">
+        <div class="grid-container w-full h-full grid gap-3 p-4">
+            <div class="left-navigation-bar gird-item-1">
+                <div class="left-navigation-bar-grid-container grid gap-3 h-full">
+                    <div class="navbar grid-item">
+                        <ul class="px-5 py-2 flex flex-col gap-4 text-base font-bold tracking-widest">
+                            <li>
+                                <a class="flex items-center gap-3" href="">
+                                    <span class="material-symbols-outlined text-2xl">home</span>
+                                    <div>Home</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-center gap-3" href="">
+                                    <span class="material-symbols-outlined text-2xl">search</span>
+                                    <div>Search</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="playlist-bar grid-item px-5 py-4">
+                        <div class="header flex gap-2 items-center justify-between text-xl">
+                            <div class="flex gap-2 items-center">
+                                <i class="fa-solid fa-bars-staggered"></i>
+                                <div>Your Playlists</div>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content-section grid-item gird-item-2 overflow-y-scroll">
+                <div class="px-10 py-8">
+                    <div class="song-container grid gap-5">
+                        <div class="song-item flex flex-col gap-4">
+                            <div class="song-img-box">
+
+                            </div>
+                            <div class="song-text ml-1">
+                                <div class="sont-name font-bold tracking-widest text-xl text-white">Roses</div>
+                                <div class="artist-name font-normal">SAINt</div>
+                            </div>
+                        </div>
+
+                        <div class="song-item flex flex-col gap-4">
+                            <div class="song-img-box">
+                        
+                            </div>
+                            <div class="song-text ml-1">
+                                <div class="sont-name font-bold tracking-widest text-xl text-white">Bad Romance</div>
+                                <div class="artist-name font-normal">Lady Gaga</div>
+                            </div>
+                        </div>
+
+                        <div class="song-item flex flex-col gap-4">
+                            <div class="song-img-box">
+                        
+                            </div>
+                            <div class="song-text ml-1">
+                                <div class="sont-name font-bold tracking-widest text-xl text-white">telepatia</div>
+                                <div class="artist-name font-normal">Kali Uchis</div>
+                            </div>
+                        </div>
+
+                        <div class="song-item flex flex-col gap-4">
+                            <div class="song-img-box">
+                        
+                            </div>
+                            <div class="song-text ml-1">
+                                <div class="sont-name font-bold tracking-widest text-xl text-white">Trantella</div>
+                                <div class="artist-name font-normal">Gabry Pontel</div>
+                            </div>
+                        </div>
+
+                        <div class="song-item flex flex-col gap-4">
+                            <div class="song-img-box">
+                        
+                            </div>
+                            <div class="song-text ml-1">
+                                <div class="sont-name font-bold tracking-widest text-xl text-white">Solo</div>
+                                <div class="artist-name font-normal">Clean Bandit</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-song-information-bar grid-item gird-item-3">
+
+            </div>
+
+            <div class="footer grid-item gird-item-4">
+                <div class="flex justify-between h-full items-center px-10">
+                    <div class="song-container flex gap-4">
+                        <div class="song-box">
+
+                        </div>
+
+                        <div class="song-box-text">
+                            <div class="song-text-name text-white tracking-widest">On My Own</div>
+                            <div class="song-text-artist font-normal">Darci</div>
+                        </div>
+                    </div>
+
+                    <div class="song-player">
+                        <div class="flex flex-col items-center justify-center gap-2">
+                            <div class="controls flex gap-8 text-2xl items-center justify-center">
+                                <i class="fa-solid fa-shuffle text-emerald-500 text-xl"></i>
+                                <i class="fa-solid fa-backward-step"></i>
+                                <i class="fa-solid fa-circle-pause"></i>
+                                <i class="fa-solid fa-forward-step"></i>
+                            </div>
+
+                            <div class="music-player flex items-center gap-4">
+                                <div class="current-timeline">2:25</div>
+                                <div class="bar w-80 h-1 rounded-full"></div>
+                                <div class="final-timeline">3:58</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="controls flex gap-3">
+                        <i class="fa-solid fa-play"></i>
+                        <i class="fa-solid fa-microphone"></i>
+                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-solid fa-volume-low"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
